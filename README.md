@@ -1,14 +1,13 @@
----
-# Metadata
-- **Document Title:** Metadata Validator - GitHub README
-- **Author:** ViewtifulSlayer
-- **Created:** 2025-07-05
-- **Last Updated:** 2025-07-05
-- **Version:** 1.0.0
-- **Status:** Active
-- **Category:** GitHub Repository README
-- **Description:** GitHub-optimized README for metadata validator package
----
+  ---
+  Document Title: Metadata Validator - GitHub README
+  Author: ViewtifulSlayer
+  Created: 2025-07-05
+  Last Updated: 2025-07-05
+  Version: 1.0.0
+  Status: Active
+  Category: GitHub Repository README
+  Description: GitHub-optimized README for metadata validator package
+  ---
 
 [![PyPI version](https://badge.fury.io/py/metadata-validator.svg)](https://badge.fury.io/py/metadata-validator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
