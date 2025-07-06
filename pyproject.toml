@@ -1,0 +1,143 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metadata-validator"
+version = "1.1.0"
+description = "Comprehensive metadata validation and testing framework for markdown documentation files"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "ViewtifulSlayer"}
+]
+maintainers = [
+    {name = "ViewtifulSlayer"}
+]
+keywords = [
+    "metadata", "validation", "markdown", "documentation", 
+    "frontmatter", "changelog", "accessibility", "neurodiversity",
+    "testing", "automation", "ci-cd", "cli"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Utilities",
+    "Framework :: Pytest",
+    "Typing :: Typed",
+]
+requires-python = ">=3.8"
+dependencies = []  # Zero dependencies - Python standard library only
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=1.0.0",
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.scripts]
+metadata-validator = "metadata_validator.metadata_validator:main"
+
+[project.urls]
+Homepage = "https://github.com/ViewtifulSlayer/metadata-validator"
+Documentation = "https://github.com/ViewtifulSlayer/metadata-validator#readme"
+Repository = "https://github.com/ViewtifulSlayer/metadata-validator"
+"Bug Tracker" = "https://github.com/ViewtifulSlayer/metadata-validator/issues"
+Changelog = "https://github.com/ViewtifulSlayer/metadata-validator/blob/main/CHANGELOG.md"
+
+[project.entry-points."console_scripts"]
+metadata-validator = "metadata_validator.metadata_validator:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["metadata_validator*"]
+
+[tool.setuptools.package-data]
+metadata_validator = ["*.md", "*.json", "*.yml", "*.yaml"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers --strict-config"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.coverage.run]
+source = ["metadata_validator"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "*/__pycache__/*",
+    "*/venv/*",
+    "*/.venv/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+] 

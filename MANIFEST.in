@@ -1,0 +1,32 @@
+# Include README and documentation
+include README.md
+include LICENSE
+include CHANGELOG.md
+include QUICKSTART.md
+include AGENT_INTEGRATION.md
+
+# Include Python package files
+recursive-include metadata_validator *.py
+recursive-include config *.py *.json
+recursive-include tests *.py
+recursive-exclude tests __pycache__
+
+# Include documentation
+recursive-include docs *.md
+
+# Include setup files
+include pyproject.toml
+include setup.py
+include setup_integration.py
+
+# Exclude cache and temporary files
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .pytest_cache
+global-exclude .coverage
+global-exclude .DS_Store
+global-exclude Thumbs.db
+global-exclude .vscode
+global-exclude .idea
+global-exclude *.swp
+global-exclude *~ 

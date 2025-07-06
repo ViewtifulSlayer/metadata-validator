@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Configuration for metadata validation standards",
+    "last_updated": "2025-07-05",
+    "author": "proto_sphinx-0.2.0"
+  },
+  "required_fields": [
+    "Document Title",
+    "Author",
+    "Created",
+    "Last Updated",
+    "Version",
+    "Description"
+  ],
+  "date_format": {
+    "pattern": "\\d{4}-\\d{2}-\\d{2}",
+    "iso_format": "YYYY-MM-DD",
+    "current_date": "2025-07-05",
+    "description": "ISO 8601 date format for all date fields"
+  },
+  "defaults": {
+    "Document Title": "Unknown",
+    "Author": "Unknown",
+    "Created": null,
+    "Last Updated": null,
+    "Version": "0.1.0",
+    "Description": "No description provided."
+  },
+  "date_patterns": {
+    "description": "Patterns for date format normalization",
+    "patterns": [
+      {
+        "name": "MM/DD/YYYY",
+        "regex": "(\\d{1,2})/(\\d{1,2})/(\\d{4})",
+        "formatter": "YYYY-MM-DD",
+        "description": "US date format with slashes"
+      },
+      {
+        "name": "MM/DD/YY",
+        "regex": "(\\d{1,2})/(\\d{1,2})/(\\d{2})",
+        "formatter": "20YY-MM-DD",
+        "description": "US date format with 2-digit year"
+      },
+      {
+        "name": "DD/MM/YYYY",
+        "regex": "(\\d{1,2})/(\\d{1,2})/(\\d{4})",
+        "formatter": "YYYY-DD-MM",
+        "description": "European date format with slashes"
+      },
+      {
+        "name": "DD/MM/YY",
+        "regex": "(\\d{1,2})/(\\d{1,2})/(\\d{2})",
+        "formatter": "20YY-DD-MM",
+        "description": "European date format with 2-digit year"
+      },
+      {
+        "name": "MM-DD-YYYY",
+        "regex": "(\\d{1,2})-(\\d{1,2})-(\\d{4})",
+        "formatter": "YYYY-MM-DD",
+        "description": "US date format with dashes"
+      },
+      {
+        "name": "DD-MM-YYYY",
+        "regex": "(\\d{1,2})-(\\d{1,2})-(\\d{4})",
+        "formatter": "YYYY-DD-MM",
+        "description": "European date format with dashes"
+      },
+      {
+        "name": "YYYY/MM/DD",
+        "regex": "(\\d{4})/(\\d{1,2})/(\\d{1,2})",
+        "formatter": "YYYY-MM-DD",
+        "description": "ISO-like format with slashes"
+      },
+      {
+        "name": "YYYY.MM.DD",
+        "regex": "(\\d{4})\\.(\\d{1,2})\\.(\\d{1,2})",
+        "formatter": "YYYY-MM-DD",
+        "description": "ISO-like format with dots"
+      },
+      {
+        "name": "YYYYMMDD",
+        "regex": "(\\d{4})(\\d{2})(\\d{2})",
+        "formatter": "YYYY-MM-DD",
+        "description": "Compact format without separators"
+      },
+      {
+        "name": "Month Name YYYY",
+        "regex": "(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{1,2}),?\\s+(\\d{4})",
+        "formatter": "YYYY-MM-DD",
+        "description": "US format with abbreviated month names"
+      },
+      {
+        "name": "Full Month YYYY",
+        "regex": "(January|February|March|April|May|June|July|August|September|October|November|December)\\s+(\\d{1,2}),?\\s+(\\d{4})",
+        "formatter": "YYYY-MM-DD",
+        "description": "US format with full month names"
+      }
+    ]
+  },
+  "timeout_config": {
+    "description": "Timeout settings for user interaction",
+    "initial_timeout": null,
+    "gentle_prompt_delay": null,
+    "final_timeout": null,
+    "note": "Set to null to disable timeouts"
+  },
+  "validation": {
+    "description": "Validation behavior settings",
+    "auto_update_last_updated": true,
+    "confirm_ambiguous_dates": true,
+    "strict_mode": false,
+    "allow_empty_values": false
+  },
+  "user_experience": {
+    "description": "User experience and accessibility settings",
+    "interactive_mode": true,
+    "auto_mode": false,
+    "gentle_prompts": true,
+    "clear_error_messages": true,
+    "color_output": true
+  },
+  "extensibility": {
+    "description": "Settings for future extensibility",
+    "custom_field_validators": {},
+    "custom_date_patterns": [],
+    "plugin_support": false
+  }
+} 
