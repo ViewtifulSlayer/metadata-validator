@@ -1,33 +1,31 @@
-  ---
-  Document Title: Metadata Validator - GitHub README
-  Author: ViewtifulSlayer
-  Created: 2025-07-05
-  Last Updated: 2025-07-05
-  Version: 1.0.0
-  Status: Active
-  Category: GitHub Repository README
-  Description: GitHub-optimized README for metadata validator package
-  ---
+# 📋 Metadata Validator
 
 [![PyPI version](https://badge.fury.io/py/metadata-validator.svg)](https://badge.fury.io/py/metadata-validator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Tests](https://img.shields.io/badge/tests-27%2F27%20passing-brightgreen.svg)](https://github.com/ViewtifulSlayer/metadata-validator)
 
-# 📋 Metadata Validator
-
 A comprehensive Python package for validating and auto-filling metadata in markdown files with smart date normalization, changelog validation, and neurodiversity-aware design.
 
 ## 📖 Table of Contents
 
-- [Features](#-features)
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [Usage](#-usage)
-- [Development Transparency](#-development-transparency)
-- [Testing Framework](#-testing-framework)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Project Info](#project-info)
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Development Transparency](#development-transparency)
+- [Testing Framework](#testing-framework)
+- [Contributing](#contributing)
+- [License](#license)
+
+## 🏷️ Project Info
+
+- **Author:** ViewtifulSlayer
+- **Version:** 1.0.0
+- **Status:** Active
+- **Category:** Python Package, Metadata Validation
+- **License:** MIT
 
 ## ✨ Features
 
