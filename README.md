@@ -16,10 +16,13 @@ A comprehensive Python package for validating and auto-filling metadata in markd
 - [Usage](#usage)
 - [Development Transparency](#development-transparency)
 - [Testing Framework](#testing-framework)
+- [Package Structure](#package-structure)
 - [Contributing](#contributing)
+- [Documentation](#documentation)
+- [Support](#support)
 - [License](#license)
 
-## 🏷️ Project Info
+## 🏷️ Project Info {#project-info}
 
 - **Author:** ViewtifulSlayer
 - **Version:** 1.0.0
@@ -27,7 +30,7 @@ A comprehensive Python package for validating and auto-filling metadata in markd
 - **Category:** Python Package, Metadata Validation
 - **License:** MIT
 
-## ✨ Features
+## ✨ Features {#features}
 
 ### Core Validation
 - ✅ Required field validation with intelligent suggestions
@@ -48,7 +51,7 @@ A comprehensive Python package for validating and auto-filling metadata in markd
 - ✅ Neurodiversity-aware design principles
 - ✅ Zero external dependencies (Python standard library only)
 
-## 📦 Installation
+## 📦 Installation {#installation}
 
 ```bash
 # Install from PyPI
@@ -60,7 +63,7 @@ cd metadata-validator
 pip install -e .
 ```
 
-## 🚀 Quick Start
+## 🚀 Quick Start {#quick-start}
 
 ```bash
 # Validate a markdown file (interactive mode)
@@ -76,7 +79,7 @@ metadata-validator path/to/file.md --manual
 metadata-validator path/to/file.md --no-auto-update
 ```
 
-## 📝 Usage
+## 📝 Usage {#usage}
 
 ### Basic Validation
 The metadata validator ensures your markdown files have proper metadata blocks:
@@ -118,7 +121,7 @@ metadata-validator README.md
 metadata-validator --check-changelog path/to/file.md
 ```
 
-## 🤖 Development Transparency
+## 🤖 Development Transparency {#development-transparency}
 
 This project was developed with assistance from AI tools, following modern best practices for AI-augmented development:
 
@@ -142,7 +145,7 @@ The core logic, architecture decisions, and implementation details were develope
 
 This transparency reflects our commitment to honest development practices and the evolving landscape of AI-assisted software development.
 
-## 🧪 Testing Framework
+## 🧪 Testing Framework {#testing-framework}
 
 ### Phoenix Adversarial Testing
 Systematic robustness testing through:
@@ -170,7 +173,7 @@ python tests/test_sphinx_cognitive.py
 python tests/test_date_normalization.py
 ```
 
-## 🏗️ Package Structure
+## 🏗️ Package Structure {#package-structure}
 
 ```
 metadata_validator/
@@ -190,7 +193,7 @@ metadata_validator/
     └── sphinx_report.md          # Sphinx cognitive pattern report
 ```
 
-## 🤝 Contributing
+## 🤝 Contributing {#contributing}
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
@@ -206,7 +209,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 - Propose adaptive solutions
 - Ensure inclusive design principles
 
-## 📚 Documentation
+## 📚 Documentation {#documentation}
 
 - **[Detailed README](docs/README_DETAILED.md):** Comprehensive documentation with competitive analysis
 - **[Testing Plan](docs/testing_plan.md):** Comprehensive testing strategy
@@ -214,13 +217,13 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 - **[Sphinx Report](docs/sphinx_report.md):** Cognitive pattern analysis
 - **[API Reference](docs/api_reference.md):** Complete API documentation
 
-## 🆘 Support
+## 🆘 Support {#support}
 
 - **Issues:** [GitHub Issues](https://github.com/ViewtifulSlayer/metadata-validator/issues)
 - **Documentation:** [Full Documentation](https://github.com/ViewtifulSlayer/metadata-validator/tree/main/docs)
 - **PyPI:** [Package Page](https://pypi.org/project/metadata-validator/)
 
-## 📄 License
+## 📄 License {#license}
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
