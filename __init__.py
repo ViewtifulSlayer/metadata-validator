@@ -4,11 +4,11 @@ Metadata Validator Package
 A comprehensive metadata validation and testing framework for markdown documentation files.
 Includes Phoenix (adversarial testing) and Sphinx (cognitive pattern analysis) approaches.
 
-Version: 1.1.0
+Version: 1.0.0
 Author: ViewtifulSlayer
 """
 
-__version__ = "1.1.0"
+__version__ = "1.0.0"
 __author__ = "ViewtifulSlayer"
 
 # Import all public functions for easy access

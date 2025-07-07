@@ -33,7 +33,7 @@ def get_version():
     return "1.0.0"
 
 setup(
-    name="metadata-validator",
+    name="metadata-validator-dx",
     version=get_version(),
     author="viewtifulslayer",
     author_email="",  # Add your email if desired

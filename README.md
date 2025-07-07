@@ -1,9 +1,15 @@
-# 📋 Metadata Validator
+# 📋 Metadata Validator DX
 
-[![PyPI version](https://badge.fury.io/py/metadata-validator.svg)](https://badge.fury.io/py/metadata-validator)
+[![PyPI version](https://img.shields.io/pypi/v/metadata-validator-dx.svg)](https://pypi.org/project/metadata-validator-dx/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Tests](https://img.shields.io/badge/tests-27%2F27%20passing-brightgreen.svg)](https://github.com/ViewtifulSlayer/metadata-validator)
+
+## 🔗 Links
+
+- [PyPI Project](https://pypi.org/project/metadata-validator-dx/)
+- [GitHub Repository](https://github.com/ViewtifulSlayer/metadata-validator)
+- [Changelog](https://github.com/ViewtifulSlayer/metadata-validator/blob/main/CHANGELOG.md)
 
 A comprehensive Python package for validating and auto-filling metadata in markdown files with smart date normalization, changelog validation, and neurodiversity-aware design.
 
@@ -55,13 +61,17 @@ A comprehensive Python package for validating and auto-filling metadata in markd
 
 ```bash
 # Install from PyPI
-pip install metadata-validator
+pip install metadata-validator-dx
 
 # Or install from source
 git clone https://github.com/ViewtifulSlayer/metadata-validator.git
 cd metadata-validator
 pip install -e .
 ```
+> **Why “DX”?**
+> “DX” is a nod to the Game Boy Color era’s “Deluxe” editions—this tool aims to bring that same spirit of enhancement and polish to metadata validation. It was also a simple solution to 'metadata-validator' being an existing project on PyPI.
+
+> **Note:** After installing `metadata-validator-dx`, use the `metadata-validator` command in your terminal.
 
 ## Quick Start
 
@@ -80,6 +90,10 @@ metadata-validator path/to/file.md --no-auto-update
 ```
 
 ## Usage
+ 
+ ```bash
+metadata-validator path/to/file.md
+```
 
 ### Basic Validation
 The metadata validator ensures your markdown files have proper metadata blocks:
@@ -221,7 +235,8 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 - **Issues:** [GitHub Issues](https://github.com/ViewtifulSlayer/metadata-validator/issues)
 - **Documentation:** [Full Documentation](https://github.com/ViewtifulSlayer/metadata-validator/tree/main/docs)
-- **PyPI:** [Package Page](https://pypi.org/project/metadata-validator/)
+- **PyPI:** [Package Page](https://pypi.org/project/metadata-validator-dx/)
+
 
 ## License
 

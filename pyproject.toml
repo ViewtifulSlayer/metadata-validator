@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "metadata-validator"
-version = "1.1.0"
+name = "metadata-validator-dx"
+version = "1.0.0"
 description = "Comprehensive metadata validation and testing framework for markdown documentation files"
 readme = "README.md"
 license = {text = "MIT"}
