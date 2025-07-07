@@ -9,6 +9,7 @@
 
 - [PyPI Project](https://pypi.org/project/metadata-validator-dx/)
 - [GitHub Repository](https://github.com/ViewtifulSlayer/metadata-validator)
+- [Releases](https://github.com/ViewtifulSlayer/metadata-validator/releases)
 - [Changelog](https://github.com/ViewtifulSlayer/metadata-validator/blob/main/CHANGELOG.md)
 
 A comprehensive Python package for validating and auto-filling metadata in markdown files with smart date normalization, changelog validation, and neurodiversity-aware design.
